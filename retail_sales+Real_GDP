@@ -1,0 +1,10 @@
+SELECT
+  `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_0, `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_1, `avid-influence-429501-h5.Economic_History.Real_GDP`.string_field_0, `avid-influence-429501-h5.Economic_History.Real_GDP`.string_field_1
+FROM
+  `avid-influence-429501-h5.Economic_History.retail_sales`
+INNER JOIN
+  `avid-influence-429501-h5.Economic_History.Real_GDP`
+ON
+  `avid-influence-429501-h5.Economic_History.Real_GDP`.string_field_0 = `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_0
+WHERE
+  `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_0 >= "2019-01-01"
