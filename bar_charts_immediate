@@ -1,5 +1,5 @@
 SELECT
-  *
+  `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_0, `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_1, `avid-influence-429501-h5.Economic_History.Real_GDP`.string_field_1, `avid-influence-429501-h5.Economic_History.CPI`.string_field_1,`avid-influence-429501-h5.Economic_History.Unrate`.string_field_1
 FROM
   `avid-influence-429501-h5.Economic_History.retail_sales`
 INNER JOIN
@@ -10,5 +10,9 @@ INNER JOIN
   `avid-influence-429501-h5.Economic_History.CPI`
 ON
   `avid-influence-429501-h5.Economic_History.Real_GDP`.string_field_0 = `avid-influence-429501-h5.Economic_History.CPI`.string_field_0
+INNER JOIN
+  `avid-influence-429501-h5.Economic_History.Unrate`
+ON
+  `avid-influence-429501-h5.Economic_History.Real_GDP`.string_field_0 = `avid-influence-429501-h5.Economic_History.Unrate`.string_field_0
 WHERE
-  `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_0 >= "2000-09-01" AND `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_0 <= "2002-09-01"
+  `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_0 >= "1999-09-01" AND `avid-influence-429501-h5.Economic_History.retail_sales`.string_field_0 <= "2004-09-01"
