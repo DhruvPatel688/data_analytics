@@ -1,0 +1,8 @@
+SELECT
+  string_field_0, string_field_1
+FROM
+  `avid-influence-429501-h5.Economic_History.apple` 
+WHERE
+  string_field_0 IS NOT NULL
+AND
+  string_field_1 IS NOT NULL
