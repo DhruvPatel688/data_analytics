@@ -1,0 +1,16 @@
+SELECT
+  `avid-influence-429501-h5.Economic_History.apple`.string_field_0,`avid-influence-429501-h5.Economic_History.apple`.string_field_1,`avid-influence-429501-h5.Economic_History.merck`.string_field_1,`avid-influence-429501-h5.Economic_History.lockheed_martin`.string_field_1
+FROM
+  `avid-influence-429501-h5.Economic_History.apple` 
+INNER JOIN
+  `avid-influence-429501-h5.Economic_History.merck` 
+ON
+  `avid-influence-429501-h5.Economic_History.apple`.string_field_0 = `avid-influence-429501-h5.Economic_History.merck`.string_field_0
+INNER JOIN
+  `avid-influence-429501-h5.Economic_History.lockheed_martin` 
+ON
+  `avid-influence-429501-h5.Economic_History.apple`.string_field_0 = `avid-influence-429501-h5.Economic_History.lockheed_martin`.string_field_0
+WHERE
+  `avid-influence-429501-h5.Economic_History.apple`.string_field_0 IS NOT NULL
+AND
+  `avid-influence-429501-h5.Economic_History.apple`.string_field_1 IS NOT NULL
