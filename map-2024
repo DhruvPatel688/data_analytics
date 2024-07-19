@@ -1,0 +1,8 @@
+SELECT
+  string_field_1, string_field_26, string_field_27, string_field_28
+FROM
+  `avid-influence-429501-h5.Economic_History.states`
+WHERE
+  string_field_1 IS NOT NULL
+AND
+  string_field_2 = "1"
