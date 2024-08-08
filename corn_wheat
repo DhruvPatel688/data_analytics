@@ -1,0 +1,10 @@
+SELECT
+  *
+FROM
+  `avid-influence-429501-h5.food.corn`
+INNER JOIN
+  `avid-influence-429501-h5.food.wheat`
+ON
+  `avid-influence-429501-h5.food.corn`.Date = `avid-influence-429501-h5.food.wheat`.Date
+WHERE
+  `avid-influence-429501-h5.food.corn`.Date >= '2018-01-01'
