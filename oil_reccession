@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  `avid-influence-429501-h5.food.olive oil`
+INNER JOIN
+  `avid-influence-429501-h5.food.palm oil`
+ON
+  `avid-influence-429501-h5.food.olive oil`.Date = `avid-influence-429501-h5.food.palm oil`.Date
+WHERE
+  `avid-influence-429501-h5.food.palm oil`.Date >= '2006-01-01' 
+AND
+  `avid-influence-429501-h5.food.palm oil`.Date <= '2010-01-01'
